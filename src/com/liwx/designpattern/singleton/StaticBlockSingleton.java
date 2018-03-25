@@ -6,7 +6,7 @@ package com.liwx.designpattern.singleton;
  */
 
 /**
- * 通过静态代码块实现单例 线程安全
+ * 通过静态代码块实现懒汉单例 线程安全
  *
  */
 public class StaticBlockSingleton {
