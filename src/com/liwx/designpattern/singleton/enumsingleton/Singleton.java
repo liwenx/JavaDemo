@@ -11,6 +11,9 @@ public enum Singleton implements MySingleton {
             System.out.println("complete singleton");
         }
     };
+    private Singleton() {
+        System.out.println("Singleton init");
+    }
     public static MySingleton getInstance() {
       return Singleton.INSTANCE;
     }
