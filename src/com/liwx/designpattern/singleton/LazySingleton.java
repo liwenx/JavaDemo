@@ -25,7 +25,9 @@ package com.liwx.designpattern.singleton;
  *
  * 为什么要使用volatile 修饰instance？
 
- 主要在于instance = new Singleton()这句，这并非是一个原子操作，事实上在 JVM 中这句话大概做了下面 3 件事情:
+ 主要在于instance = new Singleton()这句，这并非是一个原子操作，
+ 原子操作指的是不会被线程调度机制打断的操作；这种操作一旦开始，就一直运行到结束，中间不会有任何 context switch（切换到另一个线程）。
+ 事实上在 JVM 中这句话大概做了下面 3 件事情:
 
  1.给 instance 分配内存
 
