@@ -1,4 +1,4 @@
-package com.liwx.designpattern.singleton;
+package com.liwx.designpattern.singleton.enumsingleton;
 
 /**
  * @author liwenxing
@@ -7,5 +7,6 @@ package com.liwx.designpattern.singleton;
 public class Test {
     public static void main(String[] args) {
         EnumSingleton enumSingleton = EnumSingleton.INSTANCE;
+        Singleton.getInstance().doSomething();
     }
 }

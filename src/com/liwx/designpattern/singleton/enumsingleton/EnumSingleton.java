@@ -1,4 +1,4 @@
-package com.liwx.designpattern.singleton;
+package com.liwx.designpattern.singleton.enumsingleton;
 
 /**
  * @author liwenxing
