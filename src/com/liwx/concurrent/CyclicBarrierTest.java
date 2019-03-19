@@ -11,7 +11,7 @@ public class CyclicBarrierTest {
 
     private static CyclicBarrier cyclicBarrier;
 
-    static class CycliBarrierThread extends Thread {
+    static class CyclicBarrierThread extends Thread {
         @Override
         public void run() {
             System.out.println(Thread.currentThread().getName() + "到了");
@@ -34,7 +34,7 @@ public class CyclicBarrierTest {
         });
 
         for (int i = 0; i < 5; i ++) {
-            new CycliBarrierThread().start();
+            new CyclicBarrierThread().start();
         }
     }
 
